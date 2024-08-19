@@ -11,7 +11,8 @@
 1) Можно походить по следующим ссылкам:
     1) http://localhost/  - База.
     2) http://localhost/otherhtml/cat.html  - Просто прикол.
-    3) http://localhost/admin/  - Админ панель.
+    3) http://localhost/api/time/  - Узнать какая сейчас дата и время.
+    4) http://localhost/admin/  - Админ панель.
 2) Можно полазить по директориям проекта:
     1) etc/nginx  - конфигурация для веб-сервира.
     2) src  - конфигурация django сервира.
