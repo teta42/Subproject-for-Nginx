@@ -4,9 +4,26 @@ services:
     image: nginx_test
     build:
       context: .
-      dockerfile: nginx.dockerfile
+      dockerfile: build/nginx.dockerfile
     volumes:
       - ./etc/nginx:/etc/nginx
       - ./var/www:/var/www
     ports:
       - "80:80"
+    networks:
+      default:
+        ipv4_address: 172.16.1.2
+  server:
+    image: web
+    build:
+      context: .
+      dockerfile: build/web.dockerfile
+    networks:
+      default:
+        ipv4_address: 172.16.1.5
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24
