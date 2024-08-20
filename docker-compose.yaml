@@ -8,6 +8,7 @@ services:
     volumes:
       - ./nginx/etc/nginx:/etc/nginx
       - ./nginx/var/www:/var/www
+      - ./nginx/log:/var/log/nginx
     ports:
       - "80:80"
     networks:

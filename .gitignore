@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# me
+nginx/log/access.log
+nginx/log/error.log
+
 # C extensions
 *.so
 
