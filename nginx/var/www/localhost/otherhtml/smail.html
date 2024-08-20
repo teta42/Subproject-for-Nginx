@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смешной HTML</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .funny-message {
+            text-align: center;
+            font-size: 2em;
+            color: #ff4500;
+            animation: shake 0.5s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px); }
+            25% { transform: translate(-1px, -2px); }
+            50% { transform: translate(-3px, 0px); }
+            75% { transform: translate(3px, 2px); }
+            100% { transform: translate(1px, -1px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="funny-message">
+        Привет! Я смешной HTML-код! 😂<br>
+        Нажми на меня, если ты смеялся! 🎉
+    </div>
+
+    <script>
+        const message = document.querySelector('.funny-message');
+        message.addEventListener('click', () => {
+            alert('Ты нажал на смешное сообщение! 😂');
+        });
+    </script>
+</body>
+</html>

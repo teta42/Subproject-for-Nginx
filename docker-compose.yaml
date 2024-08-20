@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: build/nginx.dockerfile
     volumes:
-      - ./etc/nginx:/etc/nginx
-      - ./var/www:/var/www
+      - ./nginx/etc/nginx:/etc/nginx
+      - ./nginx/var/www:/var/www
     ports:
       - "80:80"
     networks:
