@@ -6,6 +6,7 @@ __pycache__/
 # me
 nginx/log/access.log
 nginx/log/error.log
+nginx/var/www/localhost/static
 
 # C extensions
 *.so

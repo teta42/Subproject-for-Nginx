@@ -10,7 +10,7 @@ services:
       - ./nginx/var/www:/var/www
       - ./nginx/log:/var/log/nginx
     ports:
-      - "80:80"
+      - 5000:5000
     networks:
       default:
         ipv4_address: 172.16.1.2
