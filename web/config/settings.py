@@ -118,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join('/nginx/var/www/localhost/', 'static')  # Путь, куда будут собираться статические файлы
+STATIC_ROOT = os.path.join('../nginx/var/www/localhost/', 'static')  # Путь, куда будут собираться статические файлы
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
